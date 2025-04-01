@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horse Jump Game</title>
+    <link href="css/horsejump.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+<body onload="startGame()">
+    <h1>Horse Jump</h1>
+    <h2>Use your arrow keys to move the horse to avoid the obstacles!</h2>
+    <div id="gameContainer" style="border: 2px solid #8B4513; border-radius: 10px; background-color: rgba(255, 255, 224, 0.9); padding: 20px; box-sizing: border-box;">
+        <canvas id="gameCanvas" width="900" height="600">Your browser does not support the HTML5 canvas tag.</canvas>
+    </div>
+    <div>
+        <button id="playAgain" onclick="location.reload()">Play Again</button>
+    </div>
+    <footer>
+        <a href="../Final%20Project/games.html" class="button">Back to Farm Games</a>
+        <a href="readme.txt" class="button" id="readmeBtn" target="_blank">Readme</a> 
+    </footer>
+    <script src="js/horsejump.js"></script> 
+
+</body>
+</html>

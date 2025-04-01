@@ -11,10 +11,21 @@ body {
 }
 
 /* Center the main content */
-h1 {
+h1{
     font-family: "Fredericka the Great", cursive;
     color: #6B8E23; 
     font-size: 3em;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 224, 0.9); 
+    border-radius: 10px;
+    border: 2px solid #8B4513; 
+    padding: 15px;
+}
+
+h2 {
+    font-family: cursive;
+    color: #6B8E23; 
+    font-size: 1.5em;
     margin-top: 20px;
     background-color: rgba(255, 255, 224, 0.9); 
     border-radius: 10px;
@@ -66,22 +77,11 @@ h1 {
     transition: opacity 0.3s ease;  /* Smooth fade effect */
 }
 
-.description img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
 /* Make description visible when active */
 .description.active {
     display: block;  /* Show the description when active */
     opacity: 1;
 }
-
 
 /* Remove underline from 'Click to Play' links */
 a.button {
@@ -108,5 +108,4 @@ footer {
         font-size: 0.8rem;
         padding: 8px 15px;
     }
-
 }
