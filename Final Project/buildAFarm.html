@@ -42,23 +42,25 @@ h2 {
 }
 /* Section Styling */
 section {
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
     background: url("media/ranch.jpg") no-repeat center center;
     background-size: cover;
     padding: 20px;
     border: 2px solid #8B4513;
     border-radius: 15px;
     min-height: 400px;
-    justify-content: center;
-    gap: 20px;
+    text-align: center;
 }
+
 
 /* Draggable Elements */
 p {
-    flex: 1;
-    width: 200px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    cursor: move;
 }
+
 
 p img {
     width: 100px;
@@ -147,11 +149,12 @@ a.button {
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><script>
       $(function()
         {
-            $("#MoveMe1").draggable();
-            $("#MoveMe2").draggable();
-            $("#MoveMe3").draggable();
-            $("#MoveMe4").draggable();
-            $("#MoveMe5").draggable();                    
+            $("#MoveMe1").draggable({ containment: "section" });
+            $("#MoveMe2").draggable({ containment: "section" });
+            $("#MoveMe3").draggable({ containment: "section" });
+            $("#MoveMe4").draggable({ containment: "section" });
+            $("#MoveMe5").draggable({ containment: "section" });
+              
             
         });
 </script>

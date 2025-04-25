@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chicken Maze Game</title>
+    <link href="css/chickenmaze.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+<body onload="startGame()">
+    <h1>Chicken Maze</h1>
+    <h2>Use your arrow keys to guide the chicken through the randomized maze!</h2>
+    <div id="gameContainer" style="border: 2px solid #8B4513; border-radius: 10px; background-color: rgba(255, 255, 224, 0.9); padding: 20px; box-sizing: border-box;">
+        <canvas id="gameCanvas" width="900" height="600">Your browser does not support the HTML5 canvas tag.</canvas>
+        <div id="controls">
+            <button onclick="moveByButton('ArrowUp')">↑</button><br>
+            <button onclick="moveByButton('ArrowLeft')">←</button>
+            <button onclick="moveByButton('ArrowDown')">↓</button>
+            <button onclick="moveByButton('ArrowRight')">→</button>
+        </div>
+    </div>
+    <div>
+        <button id="playAgain" onclick="location.reload()">Play Again</button>
+    </div>
+    <footer>
+        <a href="../Final%20Project/games.html" class="button">Back to Farm Games</a>
+        <a href="readme.txt" class="button" target="_blank">Readme</a> 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/chickenmaze.js"></script>
+</body>
+</html>

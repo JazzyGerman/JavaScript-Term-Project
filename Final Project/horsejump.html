@@ -9,12 +9,18 @@
 </head>
 <body onload="startGame()">
     <h1>Horse Jump</h1>
-    <h2>Use your arrow keys to move the horse to avoid the obstacles!</h2>
+    <h2>Use the arrow buttons to move the horse to avoid the obstacles!</h2>
     <div id="gameContainer" style="border: 2px solid #8B4513; border-radius: 10px; background-color: rgba(255, 255, 224, 0.9); padding: 20px; box-sizing: border-box;">
         <canvas id="gameCanvas" width="900" height="600">Your browser does not support the HTML5 canvas tag.</canvas>
+        <div id="controls">
+            <button onclick="moveHorse('ArrowUp')">↑</button><br>
+            <button onclick="moveHorse('ArrowLeft')">←</button>
+            <button onclick="moveHorse('ArrowDown')">↓</button>
+            <button onclick="moveHorse('ArrowRight')">→</button>
+        </div>        
     </div>
     <div>
-        <button id="playAgain" onclick="location.reload()">Play Again</button>
+        <button id="playAgain" onclick="restartGame()" style="visibility: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 30px;">Play Again</button>
     </div>
     <footer>
         <a href="../Final%20Project/games.html" class="button">Back to Farm Games</a>

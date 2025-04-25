@@ -10,8 +10,7 @@ body {
     padding: 20px;
 }
 
-/* Center the main content */
-h1{
+h1 {
     font-family: "Fredericka the Great", cursive;
     color: #6B8E23; 
     font-size: 3em;
@@ -33,16 +32,7 @@ h2 {
     padding: 15px;
 }
 
-/* Buttons Container: align buttons horizontally */
-.buttons-container {
-    display: flex;
-    justify-content: center; /* Centers the buttons horizontally */
-    gap: 20px;  /* Adds space between buttons */
-    margin-top: 20px;
-}
-
-/* Button Styles */
-.button {
+.button, #playAgain {
     background-color: #8FBC8F; 
     border: 2px solid #6B8E23;
     color: white;
@@ -51,39 +41,14 @@ h2 {
     cursor: pointer;
     border-radius: 5px;
     transition: background 0.3s ease;
-    width: 150px; /* Set a fixed width for buttons */
+    width: 150px;
+    margin: 10px;
 }
 
-/* Change the button color when active */
-.button.active {
-    background-color: #4B8E23; 
+.button:hover, #playAgain:hover {
+    background-color: #6B8E23;
 }
 
-/* Button hover state */
-.button:hover {
-    background-color: #6B8E23; 
-}
-
-/* Description box, hidden by default */
-.description {
-    display: none;  /* Hide descriptions initially */
-    background-color: rgba(255, 255, 224, 0.9); 
-    padding: 15px;
-    width: 80%;
-    max-width: 600px; 
-    border-radius: 10px;
-    border: 2px solid #8B4513; 
-    margin-top: 20px;  /* Push descriptions down from header */
-    transition: opacity 0.3s ease;  /* Smooth fade effect */
-}
-
-/* Make description visible when active */
-.description.active {
-    display: block;  /* Show the description when active */
-    opacity: 1;
-}
-
-/* Remove underline from 'Click to Play' links */
 a.button {
     text-decoration: none;
 }
@@ -98,7 +63,6 @@ footer {
     color: white;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
     body {
         font-size: 14px;
@@ -129,24 +93,4 @@ footer {
 
 #controls button:hover {
     background-color: #6B8E23;
-}
-
-#playAgain {
-    visibility: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    padding: 15px 25px;
-    background-color: #FF4500; /* Or any color you prefer */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Arial', sans-serif;
-}
-
-#playAgain:hover {
-    background-color: #FF6347; /* Light orange for hover effect */
 }
